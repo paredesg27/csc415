@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="16dp"
+    android:elevation="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/character_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@drawable/image0"
+            android:contentDescription="@string/lorum_ipsum"/>
+
+        <TextView
+            android:id="@+id/character_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="32sp"
+            app:layout_constraintEnd_toEndOf="@id/character_image"
+            app:layout_constraintStart_toStartOf="@id/character_image"
+            app:layout_constraintTop_toBottomOf="@id/character_image"
+            tools:text="Micheal" />
+
+        <TextView
+            android:id="@+id/character_age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textSize="32sp"
+            app:layout_constraintStart_toStartOf="@id/character_image"
+            app:layout_constraintEnd_toEndOf="@id/character_image"
+            app:layout_constraintTop_toBottomOf="@id/character_name"
+            tools:text="49" />
+
+        <TextView
+            android:id="@+id/character_job"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textSize="32sp"
+            app:layout_constraintStart_toStartOf="@id/character_image"
+            app:layout_constraintEnd_toEndOf="@id/character_image"
+            app:layout_constraintTop_toBottomOf="@id/character_age"
+            tools:text="exregional manager " />
+
+        <TextView
+            android:id="@+id/character_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="32sp"
+            app:layout_constraintStart_toStartOf="@id/character_image"
+            app:layout_constraintEnd_toEndOf="@id/character_image"
+            app:layout_constraintTop_toBottomOf="@id/character_job"
+            tools:text="49" />
+
+        <TextView
+            android:id="@+id/character_companies"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="32sp"
+            android:layout_marginStart="25dp"
+            app:layout_constraintStart_toStartOf="@id/character_image"
+            app:layout_constraintEnd_toEndOf="@id/character_image"
+            app:layout_constraintTop_toBottomOf="@id/character_id"
+            tools:text="Dunder-Mifflin, Sabre, Michael Scott Paper Company" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
