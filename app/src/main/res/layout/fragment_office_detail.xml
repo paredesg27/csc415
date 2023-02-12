@@ -1,15 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".ui.OfficeDetailFragment">
 
-    <!-- TODO: Update blank fragment layout -->
+    <ImageView
+        android:id="@+id/office_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/image0"
+        android:contentDescription="apple"/>
+
+    <TextView
+        android:id="@+id/office_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/office_image"
+        app:layout_constraintStart_toStartOf="@id/office_image"
+        app:layout_constraintEnd_toEndOf="@id/office_image"
+        android:text="he is crazy"
+        android:layout_marginTop="20dp"
+        android:textSize="32sp" />
+
+    <TextView
+        android:id="@+id/office_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:paddingStart="40dp"
+        app:layout_constraintStart_toStartOf="@id/office_image"
+        app:layout_constraintTop_toBottomOf="@id/office_description"
+        android:text="mike"
+        android:textSize="32sp" />
+
     <TextView
         android:id="@+id/office_age"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="40dp"
+        app:layout_constraintStart_toStartOf="@id/office_name"
+        app:layout_constraintTop_toBottomOf="@id/office_name"
+        android:text="50"
+        android:textSize="32sp" />
 
-</FrameLayout>
+    <TextView
+        android:id="@+id/office_job"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/office_name"
+        app:layout_constraintTop_toBottomOf="@id/office_age"
+        android:paddingStart="40dp"
+        android:text="ex managar"
+        android:textSize="32sp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
