@@ -27,7 +27,7 @@
         app:layout_constraintEnd_toEndOf="@id/office_image"
         android:text="he is crazy"
         android:layout_marginTop="20dp"
-        android:textSize="32sp" />
+        android:textSize="16sp" />
 
     <TextView
         android:id="@+id/office_name"

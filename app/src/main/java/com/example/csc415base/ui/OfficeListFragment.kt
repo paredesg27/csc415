@@ -1,6 +1,7 @@
 package com.example.csc415base.ui
 
 import android.os.Bundle
+import android.print.PrintJob
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -62,8 +63,8 @@ class OfficeListFragment : Fragment() {
                 createCharacter(
                     listNames[i],
                     Random.nextInt(30, 60),
-                    listJobs[i],
                     "https://d1zp01vk4nyewr.cloudfront.net/images/blog/_1200x630_crop_center-center_82_none/scott.jpg?mtime=1622137257",
+                    listJobs[i],
                     i,
                     companiesList
                 )
@@ -86,7 +87,7 @@ class OfficeListFragment : Fragment() {
     ) = Character(
         name = name,
         age = age,
-        image = "https://d1zp01vk4nyewr.cloudfront.net/images/blog/_1200x630_crop_center-center_82_none/scott.jpg?mtime=1622137257",
+        image = image,
         job = job,
         id = id,
         companies = companies
