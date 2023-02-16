@@ -7,11 +7,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".ui.OfficeDetailFragment">
     <androidx.constraintlayout.widget.ConstraintLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_height="wrap_content"
         tools:context=".ui.OfficeDetailFragment">
         <ImageView
             android:id="@+id/office_image"
@@ -34,7 +31,7 @@
             tools:text="apdpadpapd"
             android:paddingStart="20dp"
             android:layout_marginTop="20dp"
-            android:textSize="25dp" />
+            android:textSize="25sp" />
 
         <TextView
             android:id="@+id/office_name"
@@ -64,6 +61,7 @@
             app:layout_constraintStart_toStartOf="@id/office_name"
             app:layout_constraintTop_toBottomOf="@id/office_age"
             android:paddingStart="40dp"
+            android:paddingEnd="41dp"
             android:text="ex managar"
             android:textSize="32sp" />
 

@@ -1,7 +1,6 @@
 package com.example.csc415base.ui
 
 import android.os.Bundle
-import android.print.PrintJob
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
