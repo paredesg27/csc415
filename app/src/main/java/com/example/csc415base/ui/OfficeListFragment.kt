@@ -59,22 +59,21 @@ class OfficeListFragment : Fragment() {
             "Salesman"
         )
         val listImages = listOf(
-            "https://d1zp01vk4nyewr.cloudfront.net/images/blog/_1200x630_crop_center-center_82_none/scott.jpg?mtime=1622137257",
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4TjuN6VTO5xNRCHyPdHm1Gf1CAXSwRjRpvg&usqp=CAU",
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTppTjguozjXk3WRtXC_UFP_1-LuSElPdn0sg&usqp=CAU",
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRspbfZiL1UHmEfSxyEa3FzGMZl0P4GpeQaw&usqp=CAU",
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTy1L3tFWAq93Y3RPJzjI7WFdFEHe2f_OKepg&usqp=CAU",
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaxtWozMqJDG1PkdTEZTAjhnTu8jQ-KOgx4A&usqp=CAU",
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfWX794Vk1oZQt_c2KLHnNU7dCHVGwM-OArg&usqp=CAU",
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrSOTQQSRTkjzwEk3MvceivY6PyAAFPB4T2w&usqp=CAU",
-            "https://www.looper.com/img/gallery/randall-park-forgetting-about-his-role-on-the-office-led-to-some-awkward-fan-encounters/intro-1669938075.jpg",
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzZppt6MXH_A_FIu0KVXcK93Xwb3Rd632Uig&usqp=CAU",
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiFIHUk9khEnuhFy3CBS0iCMpbg5P-NsTBTQ&usqp=CAU",
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiqBguHfwzVmhlz4H6QJpO9rkGaf4pL7Y60g&usqp=CAU",
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPq5O8om43i0AfRRLI4gFuf0F9a5OtGpV-Sw&usqp=CAU",
+            "https://static.wikia.nocookie.net/theoffice/images/9/96/Prisonmike.png/revision/latest?cb=20100327171549",
+            "https://static.wikia.nocookie.net/theoffice/images/c/c5/Dwight_.jpg/revision/latest/scale-to-width-down/700?cb=20170701082424",
+            "https://static.wikia.nocookie.net/theoffice/images/b/b2/2009Kevincropped.PNG/revision/latest/scale-to-width-down/700?cb=20170701083657",
+            "https://static.wikia.nocookie.net/theoffice/images/e/e0/Character_-_RyanHoward.PNG/revision/latest?cb=20200414174545",
+            "https://static.wikia.nocookie.net/theoffice/images/2/23/Stanley_Hudson.jpg/revision/latest/scale-to-width-down/700?cb=20170701085445",
+            "https://static.wikia.nocookie.net/theoffice/images/2/20/2009Creed.jpg/revision/latest/scale-to-width-down/700?cb=20170701085348",
+            "https://static.wikia.nocookie.net/theoffice/images/4/49/2009DarrylCroppeed.PNG/revision/latest/scale-to-width-down/700?cb=20170701085636",
+            "https://static.wikia.nocookie.net/theoffice/images/6/67/Pam_Beesley.jpg/revision/latest/scale-to-width-down/700?cb=20170701084358",
+            "https://static.wikia.nocookie.net/theoffice/images/e/e9/Character_-_JimHalpert.PNG/revision/latest?cb=20200414162003",
+            "https://static.wikia.nocookie.net/theoffice/images/2/25/Oscar_Martinez.jpg/revision/latest/scale-to-width-down/700?cb=20170701085818",
+            "https://static.wikia.nocookie.net/theoffice/images/0/0b/Angela_Martin.jpg/revision/latest/scale-to-width-down/700?cb=20170701090232",
+            "https://static.wikia.nocookie.net/theoffice/images/6/69/Kelly_Kapoor.jpg/revision/latest/scale-to-width-down/700?cb=20170701090501",
+            "https://static.wikia.nocookie.net/theoffice/images/e/e6/Phyllis_Vance.jpg/revision/latest/scale-to-width-down/700?cb=20170701090016",
 
             )
-
         for (i in 0..12) {
             characters.add(
                 createCharacter(
