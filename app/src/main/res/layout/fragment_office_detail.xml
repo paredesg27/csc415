@@ -41,7 +41,7 @@
             android:paddingStart="40dp"
             app:layout_constraintStart_toStartOf="@id/office_image"
             app:layout_constraintTop_toBottomOf="@id/office_description"
-            android:text="mike"
+            tools:text="mike"
             android:textSize="32sp" />
 
         <TextView
@@ -51,7 +51,7 @@
             android:paddingStart="40dp"
             app:layout_constraintStart_toStartOf="@id/office_name"
             app:layout_constraintTop_toBottomOf="@id/office_name"
-            android:text="50"
+            tools:text="50"
             android:textSize="32sp" />
 
         <TextView
@@ -62,7 +62,7 @@
             app:layout_constraintTop_toBottomOf="@id/office_age"
             android:paddingStart="40dp"
             android:paddingEnd="41dp"
-            android:text="ex managar"
+            tools:text="ex managar"
             android:textSize="32sp" />
 
 

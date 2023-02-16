@@ -3,7 +3,6 @@ package com.example.csc415base
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Chronometer
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
@@ -47,7 +46,7 @@ class CharacterAdapter(private val characters: List<Character>) : RecyclerView.A
     override fun onBindViewHolder(holder: CharacterViewHolder, position: Int) {
         val character = characters[position]
 //        holder.characterImage.setImageResource(character.image)
-        Glide.with(holder.itemView.context).load("https://rickandmortyapi.com/api/character/avatar/341.jpeg").into(holder.characterImage)
+        Glide.with(holder.itemView.context).load(character.image).into(holder.characterImage)
         holder.characterName.text = character.name
         holder.characterAge.text = character.age.toString()
         holder.characterJob.text = character.job
