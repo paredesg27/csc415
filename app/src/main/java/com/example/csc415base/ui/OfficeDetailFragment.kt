@@ -38,7 +38,7 @@ class OfficeDetailFragment : Fragment() {
                 "Phyllis Vance (née Lapin), is played by Phyllis Smith in the television series The Office. She is a sales representative at Dunder Mifflin Scranton. Phyllis is a quiet but friendly type who likes girl talk and gossip."
             )
 
-            val name = "Name: " + requireArguments().getString("name")
+           val name ="Name: " + requireArguments().getString("name")
             val age = "Age: " + requireArguments().getInt("age").toString()
             val job = "Job: " + requireArguments().getString("job")
             val image = requireArguments().getString("image")
@@ -47,9 +47,7 @@ class OfficeDetailFragment : Fragment() {
             view.findViewById<TextView>(R.id.office_job).text = job
             view.findViewById<TextView>(R.id.office_description).text = officeDescriptions[officeId]
             view.findViewById<TextView>(R.id.office_name).text = name
-            Glide.with(requireContext()).load(image).override(1000)
-                .into(view.findViewById(R.id.office_image))
-
+            Glide.with(requireContext()).load(image).override(800,800).into(view.findViewById(R.id.office_image))
 
         }
 
