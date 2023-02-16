@@ -47,7 +47,7 @@ class CharacterAdapter(private val characters: List<Character>) : RecyclerView.A
     override fun onBindViewHolder(holder: CharacterViewHolder, position: Int) {
         val character = characters[position]
 //        holder.characterImage.setImageResource(character.image)
-        Glide.with(holder.itemView.context).load(character.image).override(800,800).into(holder.characterImage)
+        Glide.with(holder.itemView.context).load("https://rickandmortyapi.com/api/character/avatar/341.jpeg").into(holder.characterImage)
         holder.characterName.text = character.name
         holder.characterAge.text = character.age.toString()
         holder.characterJob.text = character.job
